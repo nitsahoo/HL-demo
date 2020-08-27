@@ -1,0 +1,154 @@
+{
+    "info": {
+        "_postman_id": "0b1be0ac-c636-4d69-b91b-26ef70efb0e7",
+        "name": "HL Demo",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+            "name": "Insert Device Data",
+            "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": "1,2,3,4,5"
+                },
+                "url": {
+                    "raw": "http://0.0.0.0:5000/api/device/1/data",
+                    "protocol": "http",
+                    "host": [
+                        "0",
+                        "0",
+                        "0",
+                        "0"
+                    ],
+                    "port": "5000",
+                    "path": [
+                        "api",
+                        "device",
+                        "1",
+                        "data"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "GET DataBase",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "http://0.0.0.0:5000/api/getdb/all",
+                    "protocol": "http",
+                    "host": [
+                        "0",
+                        "0",
+                        "0",
+                        "0"
+                    ],
+                    "port": "5000",
+                    "path": [
+                        "api",
+                        "getdb",
+                        "all"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "GET DataBase By Device ID",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "http://0.0.0.0:5000/api/getdb/1",
+                    "protocol": "http",
+                    "host": [
+                        "0",
+                        "0",
+                        "0",
+                        "0"
+                    ],
+                    "port": "5000",
+                    "path": [
+                        "api",
+                        "getdb",
+                        "1"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "GET Device Data",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "http://0.0.0.0:5000/api/device/1/data",
+                    "protocol": "http",
+                    "host": [
+                        "0",
+                        "0",
+                        "0",
+                        "0"
+                    ],
+                    "port": "5000",
+                    "path": [
+                        "api",
+                        "device",
+                        "1",
+                        "data"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "GET HealthRequest",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": ""
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "POST Filter",
+            "request": {
+                "method": "POST",
+                "header": [],
+                "url": {
+                    "raw": "http://0.0.0.0:5000/api/device/1/filter?data_lt=10",
+                    "protocol": "http",
+                    "host": [
+                        "0",
+                        "0",
+                        "0",
+                        "0"
+                    ],
+                    "port": "5000",
+                    "path": [
+                        "api",
+                        "device",
+                        "1",
+                        "filter"
+                    ],
+                    "query": [
+                        {
+                            "key": "data_lt",
+                            "value": "10"
+                        }
+                    ]
+                }
+            },
+            "response": []
+        }
+    ],
+    "protocolProfileBehavior": {}
+}
